@@ -16,10 +16,10 @@ export default function ContactForm () {
         e.preventDefault();
         setButtonText("Sending...");
         emailjs.sendForm(
-            process.env.REACT_APP_SERVICE_ID,
-            process.env.REACT_APP_TEMPLATE_ID,
+            import.meta.process.env.REACT_APP_SERVICE_ID,
+            import.meta.process.env.REACT_APP_TEMPLATE_ID,
             form.current,
-            process.env.REACT_APP_PUBLIC_KEY)
+            import.meta.process.env.REACT_APP_PUBLIC_KEY)
             .then((result) => {
                 console.log(result.text);
                 setStatus({ succes: true, message: 'Message sent successfully'});
