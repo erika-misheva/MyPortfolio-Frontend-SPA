@@ -24,13 +24,12 @@
     "react-on-screen": "^2.1.1",
     "react-router-dom": "^6.17.0",
     "react-router-hash-link": "^2.4.3",
-    "react-scripts": "^3.0.1",
+    "react-scripts": "^5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-      "dev": "node --openssl-legacy-provider ./node_modules/.bin/next dev",
     "start": "react-scripts start",
-    "build": "react-scripts build --no-warnings-as-errors",
+    "build": "react-scripts build ",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
