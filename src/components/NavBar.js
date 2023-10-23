@@ -52,10 +52,10 @@ export default function NavBar() {
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="https://www.linkedin.com/in/erika-miseva-131a151bb/" target="_blank"><img src={navIcon1} alt="" /></a>
-                <a href="https://www.facebook.com/erika.miseva" target="_blank"><img src={navIcon2} alt="" /></a>
-                <a href="https://www.instagram.com/erika.miseva/"  target="_blank"><img src={navIcon3} alt="" /></a>
-                <a href="https://github.com/erika-misheva" target="_blank" ><BsGithub  size={31.88} id="github"/></a>
+                <a href="https://www.linkedin.com/in/erika-miseva-131a151bb/" target="_blank" rel="noreferrer"><img src={navIcon1} alt="linkedin logo" /></a>
+                <a href="https://www.facebook.com/erika.miseva" target="_blank" rel="noreferrer"><img src={navIcon2} alt="facebook logo" /></a>
+                <a href="https://www.instagram.com/erika.miseva/"  target="_blank" rel="noreferrer"><img src={navIcon3} alt="instagram logo" /></a>
+                <a href="https://github.com/erika-misheva" target="_blank" rel="noreferrer"><BsGithub  size={31.88} id="github" alt="github logo"/></a>
               </div>
               <HashLink to='#connect'>
                 <button className="vvd"><span>Let’s Connect</span></button>

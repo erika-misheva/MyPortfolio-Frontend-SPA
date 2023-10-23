@@ -16,10 +16,10 @@ export const Footer = () => {
           </Col>
           <Col size={12} sm={6} className="text-center text-sm-end">
             <div className="social-icon">
-              <a href="https://www.linkedin.com/in/erika-miseva-131a151bb/" target="_blank"><img src={navIcon1} alt="" /></a>
-              <a href="https://www.instagram.com/erika.miseva/" target="_blank"><img src={navIcon2} alt="" /></a>
-              <a href="https://www.facebook.com/erika.miseva" target="_blank"><img src={navIcon3} alt="" /></a>
-              <a href="https://github.com/erika-misheva" target="_blank" ><BsGithub  size={31.88} id="github"/></a>
+              <a href="https://www.linkedin.com/in/erika-miseva-131a151bb/" target="_blank" rel="noreferrer"><img src={navIcon1} alt="linkedin logo" /></a>
+              <a href="https://www.instagram.com/erika.miseva/" target="_blank" rel="noreferrer"><img src={navIcon2} alt="instagram logo" /></a>
+              <a href="https://www.facebook.com/erika.miseva" target="_blank" rel="noreferrer"><img src={navIcon3} alt="facebook logo" /></a>
+              <a href="https://github.com/erika-misheva" target="_blank" rel="noreferrer" ><BsGithub  size={31.88} id="github" alt="github logo"/></a>
             </div>
             <p>Copyright 2022. All Rights Reserved</p>
           </Col>
