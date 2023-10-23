@@ -9,16 +9,17 @@ export default function Banner() {
     const [loopNumber, setLoopNumber] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
     const [text, setText] = useState('');
+     // eslint-disable-next-line 
     const toRotate = ["Web Developer", "Frontend Developer", "Backend Developer"];
     const [delta, setDelta] = useState(300 - Math.random() * 100);
     const period = 2000;
     useEffect(() => {
         const tick = () => {
             let i = loopNumber % toRotate.length;
+            
             let fullText = toRotate[i];
             let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
             setText(updatedText);
-    
             if (isDeleting) {
                 setDelta(prevDelta => prevDelta / 2);
             }
@@ -40,7 +41,8 @@ export default function Banner() {
         return () => {
             clearInterval(ticker);
         };
-    }, [text, delta]);
+    }, [text, delta, loopNumber, toRotate, isDeleting, setText, setDelta, setIsDeleting, setLoopNumber]);
+    
 
     return (
         <section className="banner" id="home">
